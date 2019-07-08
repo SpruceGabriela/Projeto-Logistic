@@ -97,6 +97,7 @@ main{
 
 .menu a{
     text-decoration: none;
+    color: white;
 }
 
 nav{
@@ -171,4 +172,5 @@ section .callus p:first-child{
     width: 40%;
     display: flex;
     justify-content: space-around;
+    color: white;
 }
