@@ -84,7 +84,53 @@ header{
 main{
     width: 100%;
     height: 1500px;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .conteudo{
+    width: 80%;
+    height: 270px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .conteudo .divtextos{
+    width: 375px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .conteudo .divtextos2{
+    width: 265px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divtextos2.botao img:first-child{
+    width: 150px;
+}
+
+.divtextos2.botao button{
+    background-color: aqua;
+    color: white;
+    border: none;
+}
+
+main .conteudo .divtextos2 .signature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    justify-content: center;
 }
 
 .menu{
@@ -142,6 +188,16 @@ section .callus{
 
 section .callus p:first-child{
     font-size: 16pt;
+}
+
+.signature img:first-child{
+    border-radius: 100%;
+    width: 90px;
+}
+
+.signature img:nth-child(2){
+    width: 120px;
+    height: 60px;
 }
 
 .titulo{
