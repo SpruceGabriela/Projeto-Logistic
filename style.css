@@ -125,6 +125,23 @@ main .conteudo .divtextos2{
     border: none;
 }
 
+.conteudo .estatistica{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.numeros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: magenta;
+    width: 156px;
+    height: 90px;
+}
+
 main .conteudo .divtextos2 .signature{
     display: flex;
     flex-direction: row;
