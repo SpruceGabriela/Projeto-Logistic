@@ -11,6 +11,10 @@ body{
     align-items: center;
 }
 
+.gray{
+    background-color: rgb(213, 216, 219);
+}
+
 .topicones{
     width: 400px;
     height: 50px;
@@ -77,8 +81,8 @@ footer .linha2{
 }
 
 header{
-    background-image: url(images/banner.jpg);
-    background-size: cover;
+    background-image: url(images/banner1.jpg);
+    background-size: contain;
 }
 
 main{
@@ -91,24 +95,21 @@ main{
 }
 
 main .conteudo{
-    width: 80%;
+    width: 100%;
     height: 270px;
-    background-color: blueviolet;
     display: flex;
     justify-content: space-evenly;
 }
 
 main .conteudo .divtextos{
     width: 375px;
-    background-color: aqua;
-    display: flex;
+ display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 main .conteudo .divtextos2{
     width: 265px;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +121,7 @@ main .conteudo .divtextos2{
 }
 
 .divtextos2.botao button{
-    background-color: aqua;
+    background-color: rgb(36, 160, 160);
     color: white;
     border: none;
 }
@@ -137,7 +138,6 @@ main .conteudo .divtextos2{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: magenta;
     width: 156px;
     height: 90px;
 }
@@ -185,7 +185,7 @@ nav{
 section{
     width: 100%;
     height: 100px;
-    background-color: aqua;
+    background-color:rgb(36, 160, 160);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -229,13 +229,14 @@ section .callus p:first-child{
 
 .titulo p{
     font-size: 26pt;
+    color: white;
 }
 
 .titulo button{
     width: 170px;
     height: 41px;
     border: none;
-    background-color: aqua;
+    background-color: rgb(6, 202, 202);
     color: white;
     border-radius: 5px;
 }
@@ -245,5 +246,13 @@ section .callus p:first-child{
     width: 40%;
     display: flex;
     justify-content: space-around;
+    color: white;
+}
+
+p{
+    color: gray;
+}
+
+.white{
     color: white;
 }
