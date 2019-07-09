@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.contato{
+.contato {
     width: 100%;
     height: 60px;
     display: flex;
@@ -11,25 +11,49 @@ body{
     align-items: center;
 }
 
-.gray{
-    background-color: rgb(213, 216, 219);
+.conteudo .information {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.topicones{
+
+.conteudo .informicon {
+    width: 194px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gray {
+    background-color: rgb(238, 247, 247);
+}
+
+.topicones {
     width: 400px;
     height: 50px;
     display: flex;
     align-items: center;
 }
 
-.emailtel{
+.emailtel {
     width: 500px;
     height: 50px;
     display: flex;
     justify-content: flex-start;
 }
 
-footer{
+footer {
     width: 100%;
     height: 250px;
     display: flex;
@@ -39,38 +63,39 @@ footer{
     background-color: black;
 }
 
-footer .linha1{
+footer .linha1 {
     display: flex;
     justify-content: space-evenly;
 }
-footer .footerlinks{
+
+footer .footerlinks {
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;   
+    color: white;
 }
 
-footer .footerlinks p:nth-child(2){
+footer .footerlinks p:nth-child(2) {
     color: gray;
     font-size: 10pt;
 }
 
-footer .footerlinks a{
+footer .footerlinks a {
     padding: 3px;
     color: gray;
     font-size: 10pt;
     text-decoration: none;
 }
 
-footer .footerlinks input{
+footer .footerlinks input {
     width: 100%;
     height: 30px;
     border: gray solid 0.5px;
     background-color: transparent;
 }
 
-footer .linha2{
+footer .linha2 {
     color: gray;
     height: 40px;
     font-size: 10pt;
@@ -80,12 +105,24 @@ footer .linha2{
     align-items: center;
 }
 
-header{
+header {
     background-image: url(images/banner1.jpg);
     background-size: contain;
 }
 
-main{
+.informtext {
+    display: flex;
+    width: 194px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.informicon img {
+    width: 30px;
+}
+
+main {
     width: 100%;
     height: 1500px;
     display: flex;
@@ -94,21 +131,21 @@ main{
     justify-content: space-evenly;
 }
 
-main .conteudo{
+main .conteudo {
     width: 100%;
-    height: 270px;
+    height: 350px;
     display: flex;
     justify-content: space-evenly;
 }
 
-main .conteudo .divtextos{
+main .conteudo .divtextos {
     width: 375px;
- display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-main .conteudo .divtextos2{
+main .conteudo .divtextos2 {
     width: 265px;
     display: flex;
     flex-direction: column;
@@ -116,33 +153,40 @@ main .conteudo .divtextos2{
     align-items: center;
 }
 
-.divtextos2.botao img:first-child{
+.divtextos2.botao img:first-child {
     width: 150px;
 }
 
-.divtextos2.botao button{
+.divtextos2.botao button {
     background-color: rgb(36, 160, 160);
     color: white;
+    width: 100px;
+    height: 30px;
     border: none;
 }
 
-.conteudo .estatistica{
-    background-color: azure;
+.divtextos2.botao button:hover {
+    cursor: pointer;
+    background-color: rgb(18, 75, 75);
+}
+
+.conteudo .estatistica {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.numeros{
+.numeros {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 156px;
     height: 90px;
+    background-color: white;
 }
 
-main .conteudo .divtextos2 .signature{
+main .conteudo .divtextos2 .signature {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -150,7 +194,7 @@ main .conteudo .divtextos2 .signature{
     justify-content: center;
 }
 
-.menu{
+.menu {
     height: 60px;
     width: 40%;
     display: flex;
@@ -158,19 +202,23 @@ main .conteudo .divtextos2 .signature{
     justify-content: space-evenly;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: white;
 }
 
-nav{
+nav {
     height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.navlogo{
+nav a:hover {
+    color: rgb(18, 75, 75);
+}
+
+.navlogo {
     height: 60px;
     width: 150px;
     display: flex;
@@ -178,20 +226,20 @@ nav{
     align-items: center;
 }
 
-.navlogo h1{
+.navlogo h1 {
     color: white;
 }
 
-section{
+section {
     width: 100%;
     height: 100px;
-    background-color:rgb(36, 160, 160);
+    background-color: rgb(36, 160, 160);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-section .telephone{
+section .telephone {
     width: 20%;
     display: flex;
     justify-content: space-evenly;
@@ -199,25 +247,25 @@ section .telephone{
     color: white;
 }
 
-section .callus{
+section .callus {
     color: white;
 }
 
-section .callus p:first-child{
+section .callus p:first-child {
     font-size: 16pt;
 }
 
-.signature img:first-child{
+.signature img:first-child {
     border-radius: 100%;
     width: 90px;
 }
 
-.signature img:nth-child(2){
+.signature img:nth-child(2) {
     width: 120px;
     height: 60px;
 }
 
-.titulo{
+.titulo {
     width: 100%;
     height: 300px;
     display: flex;
@@ -227,12 +275,12 @@ section .callus p:first-child{
     color: white;
 }
 
-.titulo p{
+.titulo p {
     font-size: 26pt;
     color: white;
 }
 
-.titulo button{
+.titulo button {
     width: 170px;
     height: 41px;
     border: none;
@@ -241,7 +289,12 @@ section .callus p:first-child{
     border-radius: 5px;
 }
 
-.topicones{
+.titulo button:hover {
+    background-color: rgb(18, 75, 75);
+    cursor: pointer;
+}
+
+.topicones {
     height: 50px;
     width: 40%;
     display: flex;
@@ -249,10 +302,10 @@ section .callus p:first-child{
     color: white;
 }
 
-p{
+p {
     color: gray;
 }
 
-.white{
+.white {
     color: white;
 }
