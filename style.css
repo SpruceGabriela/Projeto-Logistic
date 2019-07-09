@@ -11,6 +11,40 @@ body {
     align-items: center;
 }
 
+.conteudo {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteudo .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.conteudo .divtextos {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo .divtextos2 {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo .estatistica {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .conteudo .information {
     display: flex;
     flex-direction: row;
@@ -18,7 +52,6 @@ body {
     width: 100%;
     justify-content: space-evenly;
 }
-
 
 .conteudo .informicon {
     width: 194px;
@@ -29,21 +62,21 @@ body {
     align-items: center;
 }
 
-.conteudo .column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.divtextos2.botao button {
+    background-color: rgb(36, 160, 160);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
 }
 
-.gray {
-    background-color: rgb(238, 247, 247);
+.divtextos2.botao button:hover {
+    cursor: pointer;
+    background-color: rgb(18, 75, 75);
 }
 
-.topicones {
-    width: 400px;
-    height: 50px;
-    display: flex;
-    align-items: center;
+.divtextos2.botao img:first-child {
+    width: 150px;
 }
 
 .emailtel {
@@ -61,11 +94,6 @@ footer {
     align-items: center;
     justify-content: space-around;
     background-color: black;
-}
-
-footer .linha1 {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 footer .footerlinks {
@@ -95,6 +123,11 @@ footer .footerlinks input {
     background-color: transparent;
 }
 
+footer .linha1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 footer .linha2 {
     color: gray;
     height: 40px;
@@ -105,9 +138,18 @@ footer .linha2 {
     align-items: center;
 }
 
+.gray {
+    background-color: rgb(238, 247, 247);
+}
+
 header {
     background-image: url(images/banner1.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.informicon img {
+    width: 30px;
 }
 
 .informtext {
@@ -118,72 +160,13 @@ header {
     align-items: center;
 }
 
-.informicon img {
-    width: 30px;
-}
-
 main {
     width: 100%;
-    height: 1500px;
+    height: 1600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
-
-main .conteudo {
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-main .conteudo .divtextos {
-    width: 375px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-main .conteudo .divtextos2 {
-    width: 265px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.divtextos2.botao img:first-child {
-    width: 150px;
-}
-
-.divtextos2.botao button {
-    background-color: rgb(36, 160, 160);
-    color: white;
-    width: 100px;
-    height: 30px;
-    border: none;
-}
-
-.divtextos2.botao button:hover {
-    cursor: pointer;
-    background-color: rgb(18, 75, 75);
-}
-
-.conteudo .estatistica {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.numeros {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 156px;
-    height: 90px;
-    background-color: white;
 }
 
 main .conteudo .divtextos2 .signature {
@@ -230,6 +213,20 @@ nav a:hover {
     color: white;
 }
 
+.numeros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 156px;
+    height: 90px;
+    background-color: white;
+}
+
+p {
+    color: gray;
+}
+
 section {
     width: 100%;
     height: 100px;
@@ -237,14 +234,6 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-section .telephone {
-    width: 20%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
 }
 
 section .callus {
@@ -265,6 +254,14 @@ section .callus p:first-child {
     height: 60px;
 }
 
+section .telephone {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
 .titulo {
     width: 100%;
     height: 300px;
@@ -272,11 +269,6 @@ section .callus p:first-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-}
-
-.titulo p {
-    font-size: 26pt;
     color: white;
 }
 
@@ -294,16 +286,17 @@ section .callus p:first-child {
     cursor: pointer;
 }
 
+.titulo p {
+    font-size: 26pt;
+    color: white;
+}
+
 .topicones {
     height: 50px;
     width: 40%;
     display: flex;
     justify-content: space-around;
     color: white;
-}
-
-p {
-    color: gray;
 }
 
 .white {
